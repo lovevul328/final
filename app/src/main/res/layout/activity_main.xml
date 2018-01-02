@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.scott.finalproject.MainActivity">
+
+    <ImageView
+        android:id="@+id/fan"
+        android:layout_width="227dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
+        android:rotation="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/fan" />
+
+    <Button
+        android:id="@+id/middom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="45dp"
+        android:text="中"
+        app:layout_constraintStart_toEndOf="@+id/low"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <Button
+        android:id="@+id/high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="45dp"
+        android:text="強"
+        app:layout_constraintStart_toEndOf="@+id/middom"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <Button
+        android:id="@+id/low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="111dp"
+        android:text="弱"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fan" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="157dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="39dp"
+        android:max="15"
+        android:progress="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fan" />
+
+    <TextView
+        android:id="@+id/showtext"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:text="電風扇已開"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="39dp"
+        android:checked="true"
+        android:text="Switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fan"
+        tools:checked="false" />
+
+</android.support.constraint.ConstraintLayout>
